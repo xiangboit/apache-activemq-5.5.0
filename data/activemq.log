@@ -1,0 +1,68 @@
+2016-12-13 13:14:52,388 | INFO  | Refreshing org.apache.activemq.xbean.XBeanBrokerFactory$1@5f14568: startup date [Tue Dec 13 13:14:52 CST 2016]; root of context hierarchy | org.apache.activemq.xbean.XBeanBrokerFactory$1 | main
+2016-12-13 13:14:53,709 | WARN  | destroyApplicationContextOnStop parameter is deprecated, please use shutdown hooks instead | org.apache.activemq.xbean.XBeanBrokerService | main
+2016-12-13 13:14:53,713 | INFO  | PListStore:F:\eclipseFolder\apache-activemq-5.5.0\bin\..\data\localhost\tmp_storage started | org.apache.activemq.store.kahadb.plist.PListStore | main
+2016-12-13 13:14:53,751 | INFO  | Using Persistence Adapter: KahaDBPersistenceAdapter[F:\eclipseFolder\apache-activemq-5.5.0\bin\..\data\kahadb] | org.apache.activemq.broker.BrokerService | main
+2016-12-13 13:14:53,946 | INFO  | ActiveMQ 5.5.0 JMS Message Broker (localhost) is starting | org.apache.activemq.broker.BrokerService | main
+2016-12-13 13:14:53,946 | INFO  | For help or more information please see: http://activemq.apache.org/ | org.apache.activemq.broker.BrokerService | main
+2016-12-13 13:14:54,093 | INFO  | Listening for connections at: tcp://USER-20161029TZ:61616 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2016-12-13 13:14:54,094 | INFO  | Connector openwire Started | org.apache.activemq.broker.TransportConnector | main
+2016-12-13 13:14:54,096 | INFO  | ActiveMQ JMS Message Broker (localhost, ID:USER-20161029TZ-63864-1481606093957-0:1) started | org.apache.activemq.broker.BrokerService | main
+2016-12-13 13:14:54,171 | INFO  | jetty-7.1.6.v20100715 | org.eclipse.jetty.util.log | main
+2016-12-13 13:14:54,401 | INFO  | ActiveMQ WebConsole initialized. | org.apache.activemq.web.WebConsoleStarter | main
+2016-12-13 13:14:54,538 | INFO  | Initializing Spring FrameworkServlet 'dispatcher' | /admin | main
+2016-12-13 13:14:54,966 | INFO  | ActiveMQ Console at http://0.0.0.0:8161/admin | org.eclipse.jetty.util.log | main
+2016-12-13 13:14:55,109 | INFO  | Initializing Spring root WebApplicationContext | /camel | main
+2016-12-13 13:14:55,245 | INFO  | OSGi environment not detected. | org.apache.camel.spring.handler.CamelNamespaceHandler | main
+2016-12-13 13:14:56,058 | INFO  | Apache Camel 2.7.0 (CamelContext: camel) is starting | org.apache.camel.spring.SpringCamelContext | main
+2016-12-13 13:14:56,059 | INFO  | JMX enabled. Using ManagedManagementStrategy. | org.apache.camel.spring.SpringCamelContext | main
+2016-12-13 13:14:56,679 | INFO  | Found 5 packages with 16 @Converter classes to load | org.apache.camel.impl.converter.AnnotationTypeConverterLoader | main
+2016-12-13 13:14:56,744 | INFO  | Loaded 152 type converters in 0.524 seconds | org.apache.camel.impl.converter.DefaultTypeConverter | main
+2016-12-13 13:14:57,199 | INFO  | Connector vm://localhost Started | org.apache.activemq.broker.TransportConnector | main
+2016-12-13 13:14:57,253 | INFO  | Route: route1 started and consuming from: Endpoint[activemq://example.A] | org.apache.camel.spring.SpringCamelContext | main
+2016-12-13 13:14:57,260 | INFO  | Total 1 routes, of which 1 is started. | org.apache.camel.spring.SpringCamelContext | main
+2016-12-13 13:14:57,260 | INFO  | Apache Camel 2.7.0 (CamelContext: camel) started in 1.202 seconds | org.apache.camel.spring.SpringCamelContext | main
+2016-12-13 13:14:58,426 | INFO  | Camel Console at http://0.0.0.0:8161/camel | org.eclipse.jetty.util.log | main
+2016-12-13 13:14:58,458 | INFO  | ActiveMQ Web Demos at http://0.0.0.0:8161/demo | org.eclipse.jetty.util.log | main
+2016-12-13 13:14:58,488 | INFO  | RESTful file access application at http://0.0.0.0:8161/fileserver | org.eclipse.jetty.util.log | main
+2016-12-13 13:14:58,551 | INFO  | Started SelectChannelConnector@0.0.0.0:8161 | org.eclipse.jetty.util.log | main
+2016-12-13 13:54:29,569 | INFO  | Transport failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:57853
+2016-12-13 15:30:13,823 | INFO  | ActiveMQ Message Broker (localhost, ID:USER-20161029TZ-63864-1481606093957-0:1) is shutting down | org.apache.activemq.broker.BrokerService | Thread-20
+2016-12-13 15:30:13,890 | INFO  | ActiveMQ Message Broker (localhost, ID:USER-20161029TZ-63864-1481606093957-0:1) is shutting down | org.apache.activemq.broker.BrokerService | ActiveMQ ShutdownHook
+2016-12-13 15:30:14,420 | INFO  | Connector openwire Stopped | org.apache.activemq.broker.TransportConnector | Thread-20
+2016-12-13 15:30:14,420 | INFO  | Connector openwire Stopped | org.apache.activemq.broker.TransportConnector | ActiveMQ ShutdownHook
+2016-12-13 15:30:15,811 | WARN  | Failed to remove session ID:USER-20161029TZ-63864-1481606093957-2:1:1 | org.apache.activemq.broker.TransportConnection.Service | StopAsync:vm://localhost#0-23
+org.apache.activemq.broker.BrokerStoppedException: Broker has been stopped: org.apache.activemq.broker.BrokerService$3@19fbb5ae
+	at org.apache.activemq.broker.ErrorBroker.removeSession(ErrorBroker.java:99)
+	at org.apache.activemq.broker.MutableBrokerFilter.removeSession(MutableBrokerFilter.java:175)
+	at org.apache.activemq.broker.TransportConnection.processRemoveSession(TransportConnection.java:627)
+	at org.apache.activemq.broker.TransportConnection.processRemoveConnection(TransportConnection.java:726)
+	at org.apache.activemq.broker.TransportConnection.doStop(TransportConnection.java:1025)
+	at org.apache.activemq.broker.TransportConnection$3.run(TransportConnection.java:952)
+	at java.lang.Thread.run(Thread.java:722)
+2016-12-13 15:30:15,890 | WARN  | Failed to remove consumer: ID:USER-20161029TZ-63864-1481606093957-2:1:-1:1. Reason: org.apache.activemq.broker.BrokerStoppedException: Broker has been stopped: org.apache.activemq.broker.BrokerService$3@19fbb5ae | org.apache.activemq.broker.TransportConnection | StopAsync:vm://localhost#0-23
+org.apache.activemq.broker.BrokerStoppedException: Broker has been stopped: org.apache.activemq.broker.BrokerService$3@19fbb5ae
+	at org.apache.activemq.broker.ErrorBroker.removeConsumer(ErrorBroker.java:155)
+	at org.apache.activemq.broker.MutableBrokerFilter.removeConsumer(MutableBrokerFilter.java:123)
+	at org.apache.activemq.broker.TransportConnection.processRemoveConsumer(TransportConnection.java:575)
+	at org.apache.activemq.broker.TransportConnection.processRemoveSession(TransportConnection.java:613)
+	at org.apache.activemq.broker.TransportConnection.processRemoveConnection(TransportConnection.java:726)
+	at org.apache.activemq.broker.TransportConnection.doStop(TransportConnection.java:1025)
+	at org.apache.activemq.broker.TransportConnection$3.run(TransportConnection.java:952)
+	at java.lang.Thread.run(Thread.java:722)
+2016-12-13 15:30:15,892 | WARN  | Failed to remove session ID:USER-20161029TZ-63864-1481606093957-2:1:-1 | org.apache.activemq.broker.TransportConnection.Service | StopAsync:vm://localhost#0-23
+org.apache.activemq.broker.BrokerStoppedException: Broker has been stopped: org.apache.activemq.broker.BrokerService$3@19fbb5ae
+	at org.apache.activemq.broker.ErrorBroker.removeSession(ErrorBroker.java:99)
+	at org.apache.activemq.broker.MutableBrokerFilter.removeSession(MutableBrokerFilter.java:175)
+	at org.apache.activemq.broker.TransportConnection.processRemoveSession(TransportConnection.java:627)
+	at org.apache.activemq.broker.TransportConnection.processRemoveConnection(TransportConnection.java:726)
+	at org.apache.activemq.broker.TransportConnection.doStop(TransportConnection.java:1025)
+	at org.apache.activemq.broker.TransportConnection$3.run(TransportConnection.java:952)
+	at java.lang.Thread.run(Thread.java:722)
+2016-12-13 15:30:16,156 | WARN  | Failed to remove connection ConnectionInfo {commandId = 1, responseRequired = true, connectionId = ID:USER-20161029TZ-63864-1481606093957-2:1, clientId = ID:USER-20161029TZ-63864-1481606093957-3:1, userName = system, password = *****, brokerPath = null, brokerMasterConnector = false, manageable = true, clientMaster = true, faultTolerant = false}, reason: org.apache.activemq.broker.BrokerStoppedException: Broker has been stopped: org.apache.activemq.broker.BrokerService$3@19fbb5ae | org.apache.activemq.broker.TransportConnection.Service | StopAsync:vm://localhost#0-23
+2016-12-13 15:30:16,393 | INFO  | PListStore:F:\eclipseFolder\apache-activemq-5.5.0\bin\..\data\localhost\tmp_storage stopped | org.apache.activemq.store.kahadb.plist.PListStore | ActiveMQ ShutdownHook
+2016-12-13 15:30:16,469 | INFO  | Stopping async queue tasks | org.apache.activemq.store.kahadb.KahaDBStore | ActiveMQ ShutdownHook
+2016-12-13 15:30:16,469 | INFO  | Stopping async topic tasks | org.apache.activemq.store.kahadb.KahaDBStore | ActiveMQ ShutdownHook
+2016-12-13 15:30:16,470 | INFO  | Stopped KahaDB | org.apache.activemq.store.kahadb.KahaDBStore | ActiveMQ ShutdownHook
+2016-12-13 15:30:16,509 | INFO  | Connector vm://localhost Stopped | org.apache.activemq.broker.TransportConnector | Thread-20
+2016-12-13 15:30:17,553 | INFO  | ActiveMQ JMS Message Broker (localhost, ID:USER-20161029TZ-63864-1481606093957-0:1) stopped | org.apache.activemq.broker.BrokerService | Thread-20
+2016-12-13 15:30:17,809 | INFO  | ActiveMQ JMS Message Broker (localhost, ID:USER-20161029TZ-63864-1481606093957-0:1) stopped | org.apache.activemq.broker.BrokerService | ActiveMQ ShutdownHook
